@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign Up Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
 <style>
 	body {
 		  font-family: 'Roboto Mono', monospace;
-	   	background-image: url('set.jpeg');
+	   	background-image: url('set.png');
+        background-size: 1400px 1000px;
 
 }
 div.box1 {
@@ -13,8 +15,8 @@ div.box1 {
     position: absolute;
     top: 80px;
     left: 800px;
-    width: 400px;
-    height: 470px;
+    width: 430px;
+    height: 600px;
     border: 3px solid ;
 }
 p{
@@ -22,20 +24,37 @@ p{
 	position :relative;
 	left:30px;
 }
-input[type=text]{
+input[type=text],input[type=password]{
 	position :relative;
-	left: 1px;
+	right: 0.1px;
 	width: 1px;
     height: 60px;
 font-family: Georgia, "Times New Roman", Times, serif;
     background: rgba(255,255,255,.1);
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     padding: 1px;
     width: 100%;
     background-color: #e8eeef;
-    color:#8a97a0;
+    color:#000000;
+    margin-bottom: 30px;
+    }
+
+input[type=date]{
+    position :relative;
+    right: 0.1px;
+    width: 1px;
+    height: 60px;
+font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 1px;
+    width: 100%;
+    background-color: #e8eeef;
+    color:#000000;
     margin-bottom: 30px;
     
 }
@@ -63,9 +82,9 @@ font-family: Georgia, "Times New Roman", Times, serif;
 	<p>Create An Account</p>
 	<input type="text" name="name" placeholder="Enter Name">
     <input type="text" name="email" placeholder="Enter Email-Id">
-    <input type="text" name="pss" placeholder="Enter Password">
-	<input type="text" name="password" placeholder="Confirm Password">
-	
+    <input type="password" name="pss" placeholder="Enter Password">
+	<input type="password" name="password" placeholder="Confirm Password">
+	<input type="date" id="myDate" value="2018-07-09" placeholder="Enter DOB">
 	<button class="button"  id="k1" onclick="add()">SIGN UP</button>
 </div>
 
