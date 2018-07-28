@@ -5,8 +5,8 @@
 <style>
 	body {
 		  font-family: 'Roboto Mono', monospace;
-	   	background-image: url('set.jpeg');
-
+	   	background-image: url('set.png');
+ background-size: 1400px 1000px;
 }
 div.box1 {
 	background-color: rgba(128, 0, 0, 0.65);;
@@ -14,28 +14,29 @@ div.box1 {
     top: 80px;
     left: 800px;
     width: 400px;
-    height: 400px;
+    height: 450px;
     border: 3px solid ;
 }
 p{
 	font-size :20px;
+    top:10px;
 	position :relative;
 	left:30px;
 }
-input[type=text]{
-	position :relative;
-	left: 1px;
-	width: 1px;
+input[type=text],input[type=password]{
+    position :relative;
+    right: 0.1px;
+    width: 1px;
     height: 60px;
 font-family: Georgia, "Times New Roman", Times, serif;
     background: rgba(255,255,255,.1);
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     padding: 1px;
     width: 100%;
     background-color: #e8eeef;
-    color:#8a97a0;
+    color:#000000;
     margin-bottom: 30px;
     
 }
@@ -44,8 +45,6 @@ font-family: Georgia, "Times New Roman", Times, serif;
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
-    
-   
     background: #734f96;
     font-size: 18px;
     text-align: center;
@@ -54,7 +53,7 @@ font-family: Georgia, "Times New Roman", Times, serif;
     top:10px;
     border: 1px ;
     border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 </style>
 </head>
@@ -62,10 +61,11 @@ font-family: Georgia, "Times New Roman", Times, serif;
 <div class="box1">
 	<p>Enter Details :</p>
 	<input type="text" name="name" placeholder="Enter Name">
-	<input type="text" name="password" placeholder="Enter Password">
+	<input type="password" name="password" placeholder="Enter Password">
 	
 	<button class="button"  id="k1" onclick="add()">SIGN IN</button>
-	<button class="button" id="k2" onclick="add()">SIGN UP</button>
+    <p>Don't Have An Account?</p>
+	<a href="signup.html"><button class="button" id="k2" >SIGN UP</button></a>
 
 </div>
 
